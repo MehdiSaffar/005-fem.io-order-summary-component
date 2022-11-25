@@ -3,24 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>005 Order summary card</title>
     <script type="module" src="./style.scss"></script>
   </head>
   <body>
     <main>
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+      <article class="card">
+        <img class="card__img" src="images/illustration-hero.svg" alt="Woman listening to music with her headphones" />
+        <section class="card__content">
+          <h2 class="card__title">Order Summary</h2>
+          <p class="card__desc">
+            You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+          </p>
+          <section class="card__plan">
+            <img class="card__plan__icon" src="./images/icon-music.svg" alt="Music note" />
+            <div class="card__plan__info">
+              <h3 class="card__plan__name">Annual Plan</h3>
+              <p class="card__plan__price">$59.99/year</p>
+            </div>
+            <a href="#change-plan" class="card__plan__change">Change</a>
+          </section>
+          <button class="btn btn--primary">Proceed to Payment</button>
+          <button class="btn btn--ghost">Cancel Order</button>
+        </section>
+      </article>
     </main>
   </body>
 </html>
